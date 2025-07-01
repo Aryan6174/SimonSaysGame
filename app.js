@@ -12,13 +12,13 @@ document.addEventListener("keypress",function() {
         levelup();
     }
 })
-document.addEventListener("click",function() {
-    if(started == false){
-        console.log("Game started");
-        started = true;
-        levelup();
-    }
-})
+// document.addEventListener("click",function() {
+//     if(started == false){
+//         console.log("Game started");
+//         started = true;
+//         levelup();
+//     }
+// })
 
 function levelup(){
     userseq = [];

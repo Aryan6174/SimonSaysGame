@@ -4,7 +4,15 @@ let btns=["yellow","red","purple","green"];
 let h2 = document.querySelector("h2");
 let started = false;
 let highscore = 0;
-let level = 0;document.addEventListener("keypress",function() {
+let level = 0;
+document.addEventListener("keypress",function() {
+    if(started == false){
+        console.log("Game started");
+        started = true;
+        levelup();
+    }
+})
+document.addEventListener("click",function() {
     if(started == false){
         console.log("Game started");
         started = true;
